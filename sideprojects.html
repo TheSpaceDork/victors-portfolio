@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="input.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/9a417ab140.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="Js/script.js" defer></script>
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <div class="body4 w-screen h-screen fixed"></div>
+    <!-- Dropdown menu -->
+    <div
+      id="navMenu"
+      class="fixed min-w-full h-[100vh] md:h-[40vh] lg:h-[63vh] -top-[130vh] right-0 left-0 z-50 bg-white px-10 py-14 md:py-32 lg:px-24 transition-all ease-in-out duration-700 bg-opacity-80 backdrop-blur-[8px]"
+    >
+      <div class="absolute right-12 top-5">
+        <i id="closeBtn" class="fa-solid fa-x cursor-pointer text-lg"></i>
+      </div>
+      <div
+        class="flex flex-col h-full space-y-10 md:space-y-0 md:flex-row justify-evenly w-[100%] space-x-0 md:space-x-24"
+      >
+        <div class="min-h-[20%] md:h-full">
+          <h1
+            class="font-base md:font-medium md:text-[34px] lg:text-[40px] text-[25px] mb-4"
+          >
+            Victor Ukaigwe —
+          </h1>
+          <p
+            class="text-md font-base md:text-lg md:font-bold mb-2 whitespace-nowrap"
+          >
+            PRODUCT DESIGNER
+          </p>
+          <p
+            class="text-md font-base md:text-lg lg:font-bold text-black text-opacity-60 mb-2 whitespace-nowrap"
+          >
+            DIGITAL MARKETER
+          </p>
+          <p
+            class="font-base text-md md:text-lg lg:font-bold text-black text-opacity-50 mb-2 whitespace-nowrap"
+          >
+            UI/UX DESIGNER
+          </p>
+        </div>
+        <div class="mt-5 min-h-[20%] md:h-full">
+          <h1 class="text-gray-400 text-[18px] md:text-[25px]">Menu —</h1>
+          <ul
+            class="flex flex-col space-y-4 md:space-y-5 text-[16px] md:text-[20px] font-normal md:font-semibold mt-5"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="hover:text-opacity-40 text-black duration-500"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="hover:text-opacity-40 text-black duration-500"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="
+                mailto:iamvickd@gmail.com
+                "
+                target="_blank"
+                class="hover:text-opacity-40 text-black duration-500 whitespace-nowrap"
+                >Get in touch</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="mt-5 min-h-[20%] md:h-full">
+          <h1 class="text-gray-400 text-[20px] md:text-[25px]">Work —</h1>
+          <ul
+            class="flex flex-col space-y-4 md:space-y-5 text-[18px] md:text-[20px] font-normal md:font-semibold mt-5"
+          >
+            <li>
+              <a
+                href="sideprojects.html"
+                class="hover:text-opacity-40 text-black duration-500"
+                >Meow</a
+              >
+            </li>
+            <li>
+              <a
+                href="airbirds.html"
+                class="hover:text-opacity-40 text-black duration-500"
+                >AirBirds</a
+              >
+            </li>
+            <li>
+              <a
+                href="foodhub.html"
+                class="hover:text-opacity-40 text-black duration-500"
+                >Foodhub</a
+              >
+            </li>
+            <li>
+              <a
+                href="sideprojects.html"
+                class="hover:text-opacity-40 text-black duration-500 whitespace-nowrap"
+                >Other Projects</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- nav and hero -->
+    <nav class="relative p-5 w-[70%] mx-auto">
+      <div
+        class="nav z-10 fixed text-black opacity-0 left-10 transition-all ease-in-out duration-500"
+      >
+        <h1 class="font-semibold text-lg">Victor Ukaigwe —</h1>
+      </div>
+      <i
+        id="menuBtn"
+        class="fa-solid fa-bars fixed z-10 right-12 cursor-pointer text-lg"
+      ></i>
+    </nav>
+    <!-- hero content and hero section -->
+    <section
+      class="bg-transparent h-[70vh] lg:h-[80vh] w-screen backdrop-blur-[7px] lg:backdrop-blur-none pt-2 flex items-center justify-center"
+    >
+      <div class="mx-auto w-[85%] lg:w-[38%]">
+        <h1 class="text-5xl md:text-[100px] text-center text-white mb-14">
+          Side Projects
+        </h1>
+      </div>
+    </section>
+    <!-- flamengo -->
+    <section
+      class="w-screen h-[50vh] md:h-[70vh] lg:h-[105vh] bg-white flex flex-col md:flex-row items-center relative"
+    >
+      <div
+        class="hidden md:block card md:ml-5 lg:ml-[20vw] w-[320px] h-[330px] md:w-[400px] md:h-[360px] lg:min-w-[250px] lg:h-[360px] bg-[#EB025F] text-white down px-10 lg:px-0 py-5 z-20"
+      >
+        <div
+          class="mx-auto align-middle w-full md:w-[90%] lg:w-[80%] lg:px-0 md:px-2"
+        >
+          <h1 class="text-3xl font-bold mb-14">Flamengo</h1>
+          <p class="text-xl md:text-2xl lg:text-2xl mb-14 cardtext">
+            How do i create my own customizable outfit design online?
+          </p>
+
+          <p />
+        </div>
+      </div>
+      <div class="w-full md:w-[90%] lg:w-[60%] absolute right-0">
+        <img src="images/Group 1186.png" class="w-full" alt="" />
+      </div>
+    </section>
+    <section class="w-screen bg-white pb-9">
+      <div
+        class="bg-white w-full lg:w-[70%] ml-0 lg:ml-[32vw] flex flex-col -mt-3 md:flex-row space-y-5 items-center"
+      >
+        <div class="w-full md:w-[50%] lg:w-[45%] inline-block mr-0 md:mr-8">
+          <img src="images/Group 1207.png" class="w-screen" />
+        </div>
+        <div class="w-full md:w-[50%] lg:w-[45%] inline-block">
+          <img src="images/Group 1208.png" class="w-full" />
+        </div>
+      </div>
+    </section>
+    <section
+      class="w-screen flex flex-col lg:flex-row bg-white pt-14 space-x-0 md:space-x-10 pb-20 -mt-4 items-center"
+    >
+      <div class="w-full lg:w-[63%]">
+        <img src="images/Group 1210.png" alt="" class="w-full" />
+      </div>
+      <div
+        class="flex flex-col md:flex-row lg:flex-col items-start md:space-y-10 md:space-x-10 lg:space-x-0 space-y-10 w-full lg:w-[37%]"
+      >
+        <div
+          class="hidden md:block card w-[320px] h-[330px] md:w-[340px] md:h-[320px] lg:w-[360px] lg:h-[360px] bg-[#366E8B] text-white down px-10 lg:px-0 py-5 z-20 mt-10"
+        >
+          <div
+            class="mx-auto align-middle w-full md:w-[90%] lg:w-[80%] lg:px-0 md:px-2"
+          >
+            <h1 class="text-3xl font-bold mb-14">Comforteux</h1>
+            <p class="text-xl md:text-2xl lg:text-xl mb-14 cardtext">
+              How do I get high quality furniture and get them installed in my
+              home?
+            </p>
+
+            <p />
+          </div>
+        </div>
+        <div class="w-full md:w-[46%] lg:w-[80%]">
+          <img src="images/Group 1209.png" alt="" class="w-full" />
+        </div>
+      </div>
+    </section>
+    <section
+      class="w-screen flex flex-col md:flex-row -mt-4 bg-white pt-14 space-x-0 md:space-x-8 pb-4 lg:pb-20"
+    >
+      <div class="flex flex-col space-y-5 items-end">
+        <div
+          class="hidden md:block card w-[320px] h-[330px] md:w-[340px] md:h-[320px] lg:w-[360px] lg:h-[360px] bg-[#9C1EBE] text-white down px-10 lg:px-0 py-5 z-20"
+        >
+          <div
+            class="mx-auto align-middle w-full md:w-[90%] lg:w-[80%] lg:px-0 md:px-2"
+          >
+            <h1 class="text-3xl font-bold mb-14">Drive</h1>
+            <p class="text-xl md:text-2xl lg:text-xl mb-14 cardtext">
+              How do I hire classy cars for every event and pay less?
+            </p>
+
+            <p />
+          </div>
+        </div>
+
+        <div class="w-full md:w-[80%] lg:w-[90%]">
+          <img src="images/Group 1179.png" alt="" />
+        </div>
+      </div>
+      <div class="w-full lg:w-[60%] flex flex-col space-y-10">
+        <div class="w-full">
+          <img src="images/Group 1181.png" alt="" />
+        </div>
+        <div class="w-full lg:w-[60%]">
+          <img src="images/Group 1178.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section
+      id="meow"
+      class="w-screen flex bg-white pt-3 lg:pt-14 pb-4 lg:pb-20 flex-col space-y-8 -mt-4 items-end pr-0 lg:pr-48"
+    >
+      <div class="flex space-x-0 md:space-x-8 items-end pl-0 lg:pl-16">
+        <div class="w-full md:w-[65%]">
+          <img src="images/Group 1176.png" alt="" />
+        </div>
+
+        <div
+          class="hidden md:block card w-[320px] h-[330px] md:w-[340px] md:h-[320px] lg:w-[360px] lg:h-[360px] bg-[#FF7700] text-white down px-10 lg:px-0 py-5 z-20"
+        >
+          <div
+            class="mx-auto align-middle w-full md:w-[90%] lg:w-[80%] lg:px-0 md:px-2"
+          >
+            <h1 class="text-3xl font-bold mb-14">Paw</h1>
+            <p class="text-xl md:text-2xl lg:text-xl mb-14 cardtext">
+              How can I adopt, train and groom my pets effectively?
+            </p>
+
+            <p />
+          </div>
+        </div>
+      </div>
+      <div class="w-full lg:w-[65%] pr-0 lg:pr-16">
+        <img src="images/Group 1177.png" alt="" class="w-[100%]" />
+      </div>
+    </section>
+    <section
+      class="w-screen flex flex-col md:items-center space-y-5 lg:flex-row bg-white pt-3 lg:pt-14 space-x-0 lg:space-x-8 pb-4 lg:pb-20 -mt-4 items-start px-0 lg:px-20 lg:pl-36 pl-0"
+    >
+      <div
+        class="hidden md:block card w-[320px] h-[330px] md:w-[340px] md:h-[320px] lg:w-[360px] lg:h-[360px] bg-[#18A15D] text-white down px-10 lg:px-0 py-5 z-20"
+      >
+        <div
+          class="mx-auto align-middle w-full md:w-[90%] lg:w-[80%] lg:px-0 md:px-2"
+        >
+          <h1 class="text-3xl font-bold mb-14">iBot</h1>
+          <p class="text-xl md:text-2xl lg:text-xl mb-14 cardtext">
+            How do i detect damage before time in my car and get it fixed?
+          </p>
+
+          <p />
+        </div>
+      </div>
+
+      <div class="w-full lg:w-[70%]">
+        <img src="images/Group 1175.png" alt="" />
+      </div>
+    </section>
+    <footer class="bg-[#5465FF] w-full h-[25vh] lg:h-[20vh] py-8 px-7 -mb-9">
+      <div
+        class="w-[20%] mx-auto items-center align-middle flex flex-col justify-center space-y-6 space-x-0 h-full text-white"
+      >
+        <p class="text-sm whitespace-nowrap">See First Case Study</p>
+        <h1
+          class="inline-block ml-0 lg:ml-[25%] font-semibold text-2xl whitespace-nowrap"
+        >
+          <a href="airbirds.html">
+            AirBirds &nbsp; <i class="fa-solid fa-arrow-right-long"></i>
+          </a>
+        </h1>
+      </div>
+    </footer>
+  </body>
+</html>

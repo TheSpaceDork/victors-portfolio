@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/input.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/9a417ab140.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/Js/script.js" defer></script>
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <div class="body3 w-screen h-screen fixed"></div>
+    <!-- Dropdown menu -->
+    <div
+      id="navMenu"
+      class="fixed min-w-full h-[100vh] md:h-[40vh] lg:h-[63vh] -top-[130vh] right-0 left-0 z-50 bg-white px-10 py-14 md:py-32 lg:px-24 transition-all ease-in-out duration-700 bg-opacity-80 backdrop-blur-[8px]"
+    >
+      <div class="absolute right-12 top-5">
+        <i id="closeBtn" class="fa-solid fa-x cursor-pointer text-lg"></i>
+      </div>
+      <div
+        class="flex flex-col h-full space-y-10 md:space-y-0 md:flex-row justify-evenly w-[100%] space-x-0 md:space-x-24"
+      >
+        <div class="min-h-[20%] md:h-full">
+          <h1
+            class="font-base md:font-medium md:text-[34px] lg:text-[40px] text-[25px] mb-4"
+          >
+            Victor Ukaigwe —
+          </h1>
+          <p
+            class="text-md font-base md:text-lg md:font-bold mb-2 whitespace-nowrap"
+          >
+            PRODUCT DESIGNER
+          </p>
+          <p
+            class="text-md font-base md:text-lg lg:font-bold text-black text-opacity-60 mb-2 whitespace-nowrap"
+          >
+            DIGITAL MARKETER
+          </p>
+          <p
+            class="font-base text-md md:text-lg lg:font-bold text-black text-opacity-50 mb-2 whitespace-nowrap"
+          >
+            UI/UX DESIGNER
+          </p>
+        </div>
+        <div class="mt-5 min-h-[20%] md:h-full">
+          <h1 class="text-gray-400 text-[18px] md:text-[25px]">Menu —</h1>
+          <ul
+            class="flex flex-col space-y-4 md:space-y-5 text-[16px] md:text-[20px] font-normal md:font-semibold mt-5"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="hover:text-opacity-40 text-black duration-500"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="hover:text-opacity-40 text-black duration-500"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="
+                mailto:iamvickd@gmail.com
+                "
+                target="_blank"
+                class="hover:text-opacity-40 text-black duration-500 whitespace-nowrap"
+                >Get in touch</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="mt-5 min-h-[20%] md:h-full">
+          <h1 class="text-gray-400 text-[20px] md:text-[25px]">Work —</h1>
+          <ul
+            class="flex flex-col space-y-4 md:space-y-5 text-[18px] md:text-[20px] font-normal md:font-semibold mt-5"
+          >
+            <li>
+              <a
+                href="sideprojects.html"
+                class="hover:text-opacity-40 text-black duration-500"
+                >Meow</a
+              >
+            </li>
+            <li>
+              <a
+                href="airbirds.html"
+                class="hover:text-opacity-40 text-black duration-500"
+                >AirBirds</a
+              >
+            </li>
+            <li>
+              <a
+                href="foodhub.html"
+                class="hover:text-opacity-40 text-black duration-500"
+                >Foodhub</a
+              >
+            </li>
+            <li>
+              <a
+                href="sideprojects.html"
+                class="hover:text-opacity-40 text-black duration-500 whitespace-nowrap"
+                >Other Projects</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- nav and hero -->
+    <nav class="relative p-5 w-[70%] mx-auto">
+      <div
+        class="nav z-10 fixed text-black opacity-0 left-10 transition-all ease-in-out duration-500"
+      >
+        <h1 class="font-semibold text-lg">Victor Ukaigwe —</h1>
+      </div>
+      <i
+        id="menuBtn"
+        class="fa-solid fa-bars fixed z-10 right-12 cursor-pointer text-lg"
+      ></i>
+    </nav>
+    <!-- hero content and hero section -->
+    <section
+      class="bg-transparent h-[70vh] lg:h-[80vh] w-screen backdrop-blur-[7px] lg:backdrop-blur-none pt-2 flex items-center justify-center"
+    >
+      <div class="mx-auto w-[85%] lg:w-[38%]">
+        <h1 class="text-5xl md:text-[100px] text-center text-white mb-14">
+          Foodhub
+        </h1>
+        <p class="text-center text-base md:text-2xl font-light text-white">
+          Simplifying the food order process and accommodating cooking your
+          desired recipe without a kitchen
+        </p>
+      </div>
+    </section>
+    <!-- Main content -->
+    <section
+      class="w-full bg-white px-6 lg:px-20 min-h-[290vh] -mb-4 py-8 lg:py-16"
+    >
+      <h2
+        class="text-2xl w-full md:w-[80%] lg:w-[50%] mx-auto font-bold leading-9 mt-6"
+      >
+        Most people don't buy the idea of ordering food online because of
+        insecurity and other resourceful reasons.
+      </h2>
+      <div class="w-80% md:w-[70%] lg:w-[35%] pt-6 mx-auto mt-10">
+        <div
+          class="border-t-[4px] border-t-[#FFC31D] w-[35%] pt-6 mx-auto mt-10"
+        ></div>
+        <h1 class="text-3xl mx- auto text-[#FFC31D] text-center leading-10">
+          But how can we be able to solve this problem? Some customers might be
+          allergic to certain ingredients, how can we fix this imbalance?
+        </h1>
+      </div>
+      <div class="w-full md:w-[80%] lg:w-[40%] mx-auto mt-24">
+        <div
+          class="h-2 w-2 bg-[#ffc31d] animate-ping rounded-full mx-auto mb-4"
+        ></div>
+        <h1 class="text-3xl font-semibold mx-auto mb-5 text-center">
+          Project Overview
+        </h1>
+        <p class="text-xl mb-8 text-left md:text-center">
+          The idea was to enable a secure connection between users and the
+          restaurant/ kitchen whereby you can order or cook your meal online.
+        </p>
+        <p class="text-xl text-left md:text-center">
+          The main goals were to simplify the food order process and create an
+          interface that can accommodate cooking your desired recipe without a
+          kitchen.
+        </p>
+      </div>
+      <div class="w-full md:w-[80%] lg:w-[70%] mx-auto mt-24">
+        <div
+          class="h-2 w-2 bg-[#ffc31d] animate-ping rounded-full mx-auto mb-4"
+        ></div>
+        <h1 class="text-3xl font-semibold mx-auto mb-5 text-center">
+          Challenges
+        </h1>
+        <p class="text-xl mb-8 text-left md:text-center font-bold">
+          A lot of people consume improper diet due to the inability to purchase
+          meals with balance diet, Our team is looking to solve this problem
+          with the solutions below;
+        </p>
+        <ul
+          class="text-xl w-full lg:w-[60%] mx-auto align-middle font-semibold space-y-4 mt-14"
+        >
+          <li class="dashli">
+            Enable users to select their ingredients while placing orders
+          </li>
+          <li class="dashli">
+            Provide users with an online kitchen to enable them cook their
+            dishes online at your comfort
+          </li>
+          <li class="dashli">
+            Provide users with easy and swift delivery process
+          </li>
+          <li class="dashli">
+            Provide users with variety of vendors and grocery items
+          </li>
+          <li class="dashli">Design a user-friendly platform</li>
+        </ul>
+      </div>
+      <div class="w-full md:w-[80%] lg:w-[50%] mx-auto mt-24">
+        <div
+          class="h-2 w-2 bg-[#ffc31d] animate-ping rounded-full mx-auto mb-4"
+        ></div>
+        <h1 class="text-4xl font-semibold mx-auto mb-10 text-center">Role</h1>
+        <p class="text-xl text-left md:text-center font-medium">
+          As a team of 4 active members, we were tasked with carrying out the UX
+          research, data visualization, user persona, competitive audit,
+          storyboarding and designing the User interfaces collectively.
+        </p>
+      </div>
+      <div class="mt-28">
+        <div
+          class="h-2 w-2 bg-[#ffc31d] animate-ping rounded-full mx-auto mb-6"
+        ></div>
+        <h1
+          class="text-2xl lg:text-4xl font-semibold mx-auto mb-10 text-center"
+        >
+          Design Thinking Process
+        </h1>
+        <!-- Opaque bubble orange -->
+        <div
+          class="flex items-center flex-col lg:flex-row relative justify-between text-base space-y-10 lg:space-y-0 mt-24"
+        >
+          <div class="flex flex-col space-y-16 items-center">
+            <div
+              class="rounded-full w-32 h-32 border-2 flex-col space-y-4 text-[#ffc13d] border-[#FFC31d] bg-white text-4xl flex justify-center items-center p-4 z-20"
+            >
+              <i class="fa-solid fa-users"></i>
+              <p class="text-sm">Empathize</p>
+            </div>
+          </div>
+          <span
+            class="bg-[#ffc31d] w-[80vw] left-11 top-16 h-[2px] absolute hidden lg:block"
+          ></span>
+
+          <div class="flex flex-col space-y-16 items-center">
+            <div
+              class="rounded-full w-32 h-32 border-2 flex-col space-y-4 text-[#ffc13d] border-[#FFC31d] bg-white text-4xl flex justify-center items-center p-4 z-20"
+            >
+              <i class="fa-regular fa-pen-to-square"></i>
+              <p class="text-sm">Define</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col space-y-16 items-center">
+            <div
+              class="rounded-full w-32 h-32 border-2 flex-col space-y-4 text-[#ffc13d] border-[#FFC31d] bg-white text-4xl flex justify-center items-center p-4 z-20"
+            >
+              <i class="fa-regular fa-lightbulb"></i>
+              <p class="text-sm">Ideate</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col space-y-16 items-center">
+            <div
+              class="rounded-full w-32 h-32 border-2 flex-col space-y-4 text-[#ffc13d] border-[#FFC31d] bg-white text-4xl flex justify-center items-center p-4 z-20"
+            >
+              <i class="fa-solid fa-computer"></i>
+              <p class="text-sm">Prototype</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col space-y-16 items-center">
+            <div
+              class="rounded-full w-32 h-32 border-2 flex-col space-y-4 text-[#ffc13d] border-[#FFC31d] bg-white text-4xl flex justify-center items-center p-4 z-20"
+            >
+              <i class="fa-solid fa-users"></i>
+              <p class="text-sm">Testing</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Articles and comments -->
+      <div class="w-full md:w-[80%] lg:w-[50%] mx-auto mt-24">
+        <div
+          class="h-2 w-2 bg-[#ffc31d] animate-ping rounded-full mx-auto mb-4"
+        ></div>
+        <h1 class="text-4xl font-semibold mx-auto mb-10 text-center">
+          Problem Statement
+        </h1>
+        <p class="text-xl text-left md:text-center font-medium">
+          People are engrossed with business and work activities and so they
+          barely have time to spare to cook quality food at home.
+        </p>
+      </div>
+      <div class="w-full md:w-[80%] lg:w-[50%] mx-auto mt-24">
+        <div
+          class="h-2 w-2 bg-[#ffc31d] animate-ping rounded-full mx-auto mb-4"
+        ></div>
+        <h1 class="text-4xl font-semibold mx-auto mb-10 text-center">
+          Interviews
+        </h1>
+        <p class="text-xl text-left md:text-center font-medium">
+          To have a deeper and more complete understanding of my user ' s needs
+          deep interviews have been made. They have shown me what challenges
+          users face.
+        </p>
+      </div>
+    </section>
+    <section class="w-full bg-[#F8F8F8] pt-10 py-4 lg:py-16 min-h-[50vh] -mb-9">
+      <div class="w-full mt-6">
+        <img src="images/Group 1195.png" alt="" />
+      </div>
+    </section>
+    <!-- pain points and others -->
+    <section
+      class="w-full px-5 lg:px-10 py-8 flex bg-white h-[155vh] md:h-[100vh] lg:h-[80vh] items-center justify-evenly lg:justify-between flex-col lg:flex-row space-y-6 lg:space-y-0"
+    >
+      <div
+        class="w-full md:w-[70%] lg:w-[40%] bg-white px-10 py-5 shadow-[1px_1px_11px_4px_rgba(0,0,0,0.1)] min-h-[450px] pb-3"
+      >
+        <h1 class="text-2xl lg:text-4xl text-[#ffc31d] mb-10">
+          User Pain Points
+        </h1>
+        <ul
+          class="list-disc marker:text-[#ffc31d] text-base lg:text-2xl font-base space-y-4"
+        >
+          <li>Going to the market is very tiring</li>
+          <li>
+            User fears that they may receive unhygienic and substandard items
+          </li>
+          <li>Online products are more expensive and are unnegotiable</li>
+          <li>Late delivery</li>
+          <li>Disclosing card details</li>
+        </ul>
+      </div>
+      <div
+        class="w-full md:w-[70%] lg:w-[40%] bg-white px-10 py-5 shadow-[1px_1px_11px_4px_rgba(0,0,0,0.1)] min-h-[450px] pb-3"
+      >
+        <h1 class="text-2xl lg:text-4xl text-[#32CD32] mb-10">User Gain</h1>
+        <ul
+          class="list-disc marker:text-[#32CD32] text-sm lg:text-2xl font-base space-y-4"
+        >
+          <li>User wants a prompt and affordable delivery</li>
+          <li>
+            User want to shop for dishes without going through much stress
+          </li>
+          <li>
+            User wants a secured platform that doesn't expose their details to
+            scammers
+          </li>
+          <li>User wants to receive hygienic and quality items</li>
+          <li>User wants an easy pricing system</li>
+        </ul>
+      </div>
+    </section>
+    <section class="w-full bg-white px-0 lg:px-20 pt-5 min-h-[50vh] -mt-3">
+      <div class="w-full">
+        <img src="images/Group 1168.png" alt="" />
+      </div>
+    </section>
+    <!-- Wire frames -->
+    <section class="bg-white w-full py-24 pt-5 -mt-5">
+      <div>
+        <div
+          class="h-2 w-2 bg-[#ffc31d] animate-ping rounded-full mx-auto mb-4"
+        ></div>
+        <h1 class="text-4xl font-semibold mx-auto mb-24 text-center">
+          Wireframe
+        </h1>
+      </div>
+      <!-- <div class="grid overflow-hidden grid-cols-4 grid-rows-4 gap-2 h-auto">
+        <div class="box">
+          1
+          <img src="" alt="" />
+        </div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+      </div> -->
+      <div class="w-full lg:w-[70%] mx-auto">
+        <img src="images/Group 1205.png" alt="" />
+      </div>
+    </section>
+    <!-- Screens --->
+    <section class="w-full bg-white py-4 min-h-[180vh] lg:min-h-[130vh] -mt-9">
+      <div>
+        <div
+          class="h-2 w-2 bg-[#ffc31d] animate-ping rounded-full mx-auto mb-4"
+        ></div>
+        <h1 class="text-4xl font-semibold mx-auto text-center">Screens</h1>
+        <div
+          class="w-[85%] mx-auto mt-40 flex flex-col lg:flex-row justify-between"
+        >
+          <div
+            class="w-full lg:w-[28%] inline-block mr-0 lg:mr-24 mt-8 lg:mt-[60vh] scale"
+          >
+            <img src="images/Group 1197.png" alt="" class="w-full" />
+          </div>
+          <div class="w-full lg:w-[28%] inline-block mr-0 lg:mr-24 scale">
+            <img src="images/Group 1196.png" alt="" class="w-full" />
+          </div>
+          <div class="w-full lg:w-[28%] inline-block mt-8 lg:mt-[60vh] scale">
+            <img src="images/Group 1110.png" alt="" class="w-full" />
+          </div>
+        </div>
+        <!-- set of two -->
+        <div
+          class="w-[85%] mx-auto mt-40 flex flex-col lg:flex-row justify-between"
+        >
+          <div class="w-full lg:w-[28%] inline-block mr-36 scale">
+            <img src="images/Group 1199.png" alt="" class="w-full" />
+          </div>
+          <div class="w-full lg:w-[28%] inline-block scale">
+            <img src="images/Group 1198.png" alt="" class="w-full" />
+          </div>
+        </div>
+        <!-- divider -->
+        <div
+          class="w-[85%] mx-auto mt-40 flex flex-col lg:flex-row justify-between"
+        >
+          <div class="w-full lg:w-[28%] inline-block mr-36 scale">
+            <img src="images/Group 1201.png" alt="" class="w-full" />
+          </div>
+          <div class="w-full lg:w-[28%] inline-block scale">
+            <img src="images/Group 1200.png" alt="" class="w-full" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-[#BFCCE5] w-full h-[25vh] lg:h-[20vh] py-8 px-7">
+      <div
+        class="w-[20%] mx-auto items-center align-middle flex flex-col justify-center space-y-6 space-x-0 h-full text-white"
+      >
+        <p class="text-sm">Next Up</p>
+        <h1
+          class="inline-block ml-0 lg:ml-[25%] font-semibold text-2xl whitespace-nowrap"
+        >
+          <a href="sideprojects.html">
+            Side Projects &nbsp; <i class="fa-solid fa-arrow-right-long"></i>
+          </a>
+        </h1>
+        <!-- <div class="inline-block w-[10%] scale mb-10">
+          <div class="flex w-full space-x-5 text-md lg:text-xl">
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:iamvickd@gmail.com" target="_blank"
+              ><i class="fa-regular fa-envelope"></i
+            ></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-behance"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div> -->
+      </div>
+    </footer>
+  </body>
+</html>

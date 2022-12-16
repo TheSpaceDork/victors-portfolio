@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/input.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/9a417ab140.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/Js/script.js" defer></script>
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <div class="body2 w-screen h-screen fixed"></div>
+    <!-- Dropdown menu -->
+    <div
+      id="navMenu"
+      class="fixed min-w-full h-[100vh] md:h-[40vh] lg:h-[63vh] -top-[130vh] right-0 left-0 z-50 bg-white px-10 py-14 md:py-32 lg:px-24 transition-all ease-in-out duration-700 bg-opacity-80 backdrop-blur-[8px]"
+    >
+      <div class="absolute right-12 top-5">
+        <i id="closeBtn" class="fa-solid fa-x cursor-pointer text-lg"></i>
+      </div>
+      <div
+        class="flex flex-col h-full space-y-10 md:space-y-0 md:flex-row justify-evenly w-[100%] space-x-0 md:space-x-24"
+      >
+        <div class="min-h-[20%] md:h-full">
+          <h1
+            class="font-base md:font-medium md:text-[34px] lg:text-[40px] text-[25px] mb-4"
+          >
+            Victor Ukaigwe —
+          </h1>
+          <p
+            class="text-md font-base md:text-lg md:font-bold mb-2 whitespace-nowrap"
+          >
+            PRODUCT DESIGNER
+          </p>
+          <p
+            class="text-md font-base md:text-lg lg:font-bold text-black text-opacity-60 mb-2 whitespace-nowrap"
+          >
+            DIGITAL MARKETER
+          </p>
+          <p
+            class="font-base text-md md:text-lg lg:font-bold text-black text-opacity-50 mb-2 whitespace-nowrap"
+          >
+            UI/UX DESIGNER
+          </p>
+        </div>
+        <div class="mt-5 min-h-[20%] md:h-full">
+          <h1 class="text-gray-400 text-[18px] md:text-[25px]">Menu —</h1>
+          <ul
+            class="flex flex-col space-y-4 md:space-y-5 text-[16px] md:text-[20px] font-normal md:font-semibold mt-5"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="hover:text-opacity-40 text-black duration-500"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="hover:text-opacity-40 text-black duration-500"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="
+                mailto:iamvickd@gmail.com
+                "
+                target="_blank"
+                class="hover:text-opacity-40 text-black duration-500 whitespace-nowrap"
+                >Get in touch</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="mt-5 min-h-[20%] md:h-full">
+          <h1 class="text-gray-400 text-[20px] md:text-[25px]">Work —</h1>
+          <ul
+            class="flex flex-col space-y-4 md:space-y-5 text-[18px] md:text-[20px] font-normal md:font-semibold mt-5"
+          >
+            <li>
+              <a
+                href="sideprojects.html"
+                class="hover:text-opacity-40 text-black duration-500"
+                >Meow</a
+              >
+            </li>
+            <li>
+              <a
+                href="airbirds.html"
+                class="hover:text-opacity-40 text-black duration-500"
+                >AirBirds</a
+              >
+            </li>
+            <li>
+              <a
+                href="foodhub.html"
+                class="hover:text-opacity-40 text-black duration-500"
+                >Foodhub</a
+              >
+            </li>
+            <li>
+              <a
+                href="sideprojects.html"
+                class="hover:text-opacity-40 text-black duration-500 whitespace-nowrap"
+                >Other Projects</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- nav and hero -->
+    <nav class="relative p-5 w-[70%] mx-auto">
+      <div
+        class="nav z-10 fixed text-black opacity-0 left-10 transition-all ease-in-out duration-500"
+      >
+        <h1 class="font-semibold text-lg">Victor Ukaigwe —</h1>
+      </div>
+      <i
+        id="menuBtn"
+        class="fa-solid fa-bars fixed z-10 right-12 cursor-pointer text-lg"
+      ></i>
+    </nav>
+    <!-- MAin content and first section -->
+    <section
+      class="bg-transparent h-[70vh] lg:h-[80vh] w-screen backdrop-blur-[7px] lg:backdrop-blur-none pt-2 flex items-center justify-center"
+    >
+      <div class="mx-auto w-[85%] lg:w-[38%]">
+        <h1 class="text-5xl lg:text-[100px] text-center text-white mb-14">
+          AirBirds
+        </h1>
+        <p class="text-center text-base lg:text-2xl font-light text-white">
+          Providing a simple travel experience <br />
+          resourceful travel information and reservations bookings
+        </p>
+      </div>
+    </section>
+    <!-- Description of the study -->
+    <section class="px-2 md:px-8 lg:px-28 py-14 bg-white w-full">
+      <div class="mx-auto w-[100%] lg:w-[40%] items-center">
+        <img src="images/Group 1137 (1).png" alt="" class="w-full" />
+        <figcaption class="mt-6 text-center text-xl">LeBris 1868</figcaption>
+      </div>
+      <div
+        class="px-2 md:px-14 lg:px-0 mt-14 text-lg lg:text-xl leading-9 font-light"
+      >
+        <p class="mb-14">
+          Wilbur and Orville Wright spent four years of research and development
+          to create the first successful powered airplane, the 1903 Wright
+          Flyer.It first flew at Kitty Hawk, North Carolina, on December 17,
+          1903, with Orville at the controls. In 1799, George Cayley set forth
+          the concept of the modern airplane as a fixed-wing flying machine with
+          separate systems for li, propulsion, and control. Cayley was building
+          and flying models of fixed-wing aircra as early as 1803, and he built
+          a successful passenger-carrying glider in 1853
+        </p>
+        <h1
+          class="text-2xl lg:text-4xl text-blue-700 text-center font-medium mb-14"
+        >
+          PROJECT OVERVIEW
+        </h1>
+        <p class="mb-14">
+          <span class="text-3xl font-medium">AIRBIRDS</span> was created to help
+          users in having a seamless online experience when booking flights. The
+          idea of the app is to generate a secure and easy connections between
+          users and Air travels. Whereby users cannot only book flights but can
+          access other similitudes like pickups and drop offs, reservations and
+          get comprehensive informations like pre travel weather reports,
+          directions from point of booking to destination and other exciting
+          features with just a click.
+        </p>
+        <div
+          class="px-8 mt-12 text-blue-700 border-l-2 w-full lg:w-[40%] font-semibold border-l-blue-700 mx-auto"
+        >
+          Imagine hours before your departure time, An official Friendly
+          Chauffeur shows up with a smile offering to help with your luggage and
+          drive you to the airport ?
+        </div>
+        <h1
+          class="text-2xl lg:text-4xl text-blue-700 mt-20 text-center font-medium mb-16"
+        >
+          PROBLEM DIAGNOSIS
+        </h1>
+        <p>
+          We needed to dive deeper into why AIRBIRDS will aid the users to solve
+          a lot of impromptu menace encountered as a result of Air travels and
+          other bookings and how it compares against competitors in flight app's
+          landscape.Most times newbies find it difficult to book flights and oen
+          they can't locate the airport either in form of finding the direction
+          or in form of logistics. In this effect most user tend to miss their
+          flight by arriving late at the airport, and in other cases some arrive
+          too early and aerwards become so weary before their departure time.
+          Lastly we found out that most flight are canceled as a result of bad
+          weather conditions and other technical imbalances.
+        </p>
+        <div
+          class="w-full relative flex flex-col lg:flex-row justify-between items-center mt-10"
+        >
+          <div class="w-full lg:w-[50%] mb-7">
+            <img src="images/Group 1139.png" alt="" />
+            <figcaption class="text-xs mt-4">
+              Nigeria Super Falcons stranded in the airport because of failure
+              in proper trip bookings
+            </figcaption>
+          </div>
+          <div class="flex flex-col space-y-10 w-full lg:w-[40%]">
+            <div>
+              <img src="images/Group 1140.png" alt="" />
+              <figcaption class="text-xs mt-4">
+                Stranded family after missing their flight at bermuda airport
+                2019
+              </figcaption>
+            </div>
+            <div>
+              <img src="images/Group 1138.png" alt="" />
+              <figcaption class="text-xs mt-4">
+                A man arrived too early because of impromptu departure
+                information
+              </figcaption>
+            </div>
+          </div>
+        </div>
+        <p class="text-sm font-semibold mt-20">
+          As about 14 million people travel by air everyday, 25% of this number
+          encounter a challenge and more than half of this challenges are
+          technical issues. In 2014 it was recorded for the highest income loss
+          in Airways industry and this was as a result of technical issues
+        </p>
+
+        <h1
+          class="text-2xl lg:text-4xl text-blue-700 mt-20 text-center font-medium mb-16"
+        >
+          RESULTS OF PROBLEM DIAGNOSIS
+        </h1>
+        <p>
+          From this study, we could further segment our main user into three
+          groups: large event organisers, individual travelers, airport cashiers
+          in charge of checking in guests. We also broke down the users by their
+          attributes, pain points, motivations, goals and responsibilities.
+        </p>
+        <!-- People cards -->
+        <div
+          class="border border-gray-300 mt-16 mx-auto text-gray-500 bg-gray-100 w-full md:w-[70%] lg:w-[80%] min-h-[60vh] flex flex-col lg:flex-row py-11 space-x-16 items-center text-xs lg:text-base"
+        >
+          <div
+            class="lg:border-r border-b border-b-gray-500 lg:border-b-0 lg:border-r-gray-500 w-[100%] lg:w-[20%] h-[60%] text-gray-500 px-2 text-center py-2"
+          >
+            <h3 class="text-blue-700 text-sm lg:text-lg font-medium mb-1">
+              Airport Cashier
+            </h3>
+            <p>Ada</p>
+            <img
+              src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cmFuZG9tJTIwcGVvcGxlJTIwcG9ydHJhaXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+              class="rounded-full h-14 w-14 lg:h-28 lg:w-28 mx-auto mt-1"
+              alt=""
+            />
+          </div>
+          <div class="w-[100%] mb-4 mt-4 lg:w-[40%]">
+            <h2 class="text-gray-600 text-sm lg:text-lg font-bold mb-3">
+              Attributes
+            </h2>
+            <ul class="list-disc marker:text-gray-500">
+              <li class="mb-1">
+                Tech Proficiency
+                <ul class="list-disc pl-8 text-xs lg:text-sm mt-1">
+                  <li>Medium - High</li>
+                </ul>
+              </li>
+              <li class="mb-1">
+                Core Needs
+                <ul class="list-disc pl-8 text-xs lg:text-sm">
+                  <li class="mb-1">
+                    Access to all flight and booking information
+                  </li>
+                </ul>
+              </li>
+              <li>Organized, multitasking, socially connected</li>
+            </ul>
+            <h2 class="text-gray-600 text-sm lg:text-lg font-bold mt-3 mb-3">
+              Goals & Responsibilities
+            </h2>
+            <ul class="list-disc marker:text-gray-500">
+              <li class="mb-1">Ensure a successful flight booking</li>
+              <li>Responsible for both sales & check in</li>
+            </ul>
+          </div>
+          <div class="w-full lg:w-[30%]">
+            <h2 class="text-gray-600 text-sm lg:text-lg font-bold mb-3">
+              Pain Points
+            </h2>
+            <ul class="list-disc text-gray-500">
+              <li class="mb-1">Lack of time to accomplish all tasks</li>
+              <li>Lack of tech know how</li>
+            </ul>
+            <h2 class="text-gray-600 text-sm lg:text-lg font-bold mb-3 mt-3">
+              Motivations
+            </h2>
+            <ul class="list-disc marker:text-gray-500 w-[80%]">
+              <li class="mb-1">
+                Create an intimate connection with their attendees or volunteers
+              </li>
+              <li>
+                Positive flight experience that maintains their credibility
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- cards 2 -->
+        <div
+          class="border border-gray-300 mt-16 mx-auto text-gray-500 bg-gray-100 w-full md:w-[70%] lg:w-[80%] min-h-[60vh] flex flex-col lg:flex-row py-11 space-x-16 items-center text-xs lg:text-base"
+        >
+          <div
+            class="lg:border-r border-b border-b-gray-500 lg:border-b-0 lg:border-r-gray-500 w-[100%] lg:w-[20%] h-[60%] text-gray-500 px-2 text-center py-2"
+          >
+            <h3 class="text-blue-700 text-sm lg:text-lg font-medium mb-1">
+              Event Organizer
+            </h3>
+            <p>James</p>
+            <img
+              src="https://images.unsplash.com/photo-1485893226355-9a1c32a0c81e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTA1fHxyYW5kb20lMjBwZW9wbGUlMjBwb3J0cmFpdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+              class="rounded-full h-14 w-14 lg:h-28 lg:w-28 mx-auto mt-1"
+              alt=""
+            />
+          </div>
+          <div class="w-[100%] mb-4 mt-4 lg:w-[40%]">
+            <h2 class="text-gray-600 text-sm lg:text-lg font-bold mb-3">
+              Attributes
+            </h2>
+            <ul class="list-disc marker:text-gray-500">
+              <li class="mb-1">
+                Tech Proficiency
+                <ul class="list-disc pl-8 text-xs lg:text-sm mt-1">
+                  <li>Medium - High</li>
+                </ul>
+              </li>
+              <li class="mb-1">
+                Core Needs
+                <ul class="list-disc pl-8 text-xs w-[80%] lg:text-sm">
+                  <li class="mb-1">
+                    Process tourists booking information quickly and reliably
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <h2 class="text-gray-600 text-sm lg:text-lg font-bold mt-3 mb-3">
+              Goals & Responsibilities
+            </h2>
+            <ul class="list-disc marker:text-gray-500">
+              <li class="mb-1">
+                Successful transactions of ticket for travelers
+              </li>
+              <li>Responsible for the comfortability and security</li>
+            </ul>
+          </div>
+          <div class="w-full lg:w-[30%]">
+            <h2 class="text-gray-600 text-sm lg:text-lg font-bold mb-3">
+              Pain Points
+            </h2>
+            <ul class="list-disc text-gray-500">
+              <li class="mb-1">
+                Unfamiliar with flight booking apps including <br />
+                the use of Airbirds
+              </li>
+              <li class="mb-1">Dealing with travelers vital information</li>
+
+              <li>Environmental issues: WiFi, weather</li>
+            </ul>
+            <h2 class="text-gray-600 text-sm lg:text-lg font-bold mb-3 mt-3">
+              Motivations
+            </h2>
+            <ul class="list-disc marker:text-gray-500">
+              <li class="mb-1">Positive travel attendees interaction</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Cards 3 -->
+        <div
+          class="border border-gray-300 mt-16 mx-auto text-gray-500 bg-gray-100 w-full md:w-[70%] lg:w-[80%] min-h-[60vh] flex flex-col lg:flex-row py-11 space-x-16 items-center text-xs lg:text-base"
+        >
+          <div
+            class="lg:border-r border-b border-b-gray-500 lg:border-b-0 lg:border-r-gray-500 w-[100%] lg:w-[20%] h-[60%] text-gray-500 px-2 text-center py-2"
+          >
+            <h3 class="text-blue-700 text-sm lg:text-lg font-medium mb-1">
+              Individual Traveller
+            </h3>
+            <p>Olivia</p>
+            <img
+              src="https://images.unsplash.com/photo-1526621553736-d0cfb8b59b76?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTkyfHxyYW5kb20lMjBwZW9wbGUlMjBwb3J0cmFpdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+              class="rounded-full h-14 w-14 lg:h-28 lg:w-28 mx-auto mt-1"
+              alt=""
+            />
+          </div>
+
+          <div class="w-[100%] mb-4 mt-4 lg:w-[40%]">
+            <h2 class="text-gray-600 text-sm lg:text-lg font-bold mb-3">
+              Attributes
+            </h2>
+            <ul class="list-disc marker:text-gray-500">
+              <li class="mb-1">
+                Tech Proficiency
+                <ul class="list-disc pl-8 text-xs lg:text-sm mt-1">
+                  <li>Low - Medium</li>
+                </ul>
+              </li>
+              <li class="mb-1">
+                Core Needs
+                <ul class="list-disc pl-8 text-xs lg:text-sm">
+                  <li class="mb-1">Check in flight quickly & reliably</li>
+                </ul>
+              </li>
+            </ul>
+            <h2 class="text-gray-600 text-sm lg:text-lg font-bold mt-3 mb-3">
+              Goals & Responsibilities
+            </h2>
+            <ul class="list-disc marker:text-gray-500">
+              <li class="mb-1">Successful check in for travelers</li>
+            </ul>
+          </div>
+          <div class="w-full lg:w-[30%]">
+            <h2 class="text-gray-600 text-sm lg:text-lg font-bold mb-3">
+              Pain Points
+            </h2>
+            <ul class="list-disc text-gray-500">
+              <li class="mb-1">
+                Unfamiliar with flight booking apps including <br />
+                the use of Airbirds
+              </li>
+              <li class="mb-1">Dealing with travelers vital information</li>
+
+              <li>Environmental issues: WiFi, weather</li>
+            </ul>
+            <h2 class="text-gray-600 text-sm lg:text-lg font-bold mb-3 mt-3">
+              Motivations
+            </h2>
+            <ul class="list-disc marker:text-gray-500">
+              <li class="mb-1">Positive travel attendees interaction</li>
+            </ul>
+          </div>
+        </div>
+        <p class="text-center text-sm text-gray-500 mt-8">
+          User personas we discovered through qualitative research and
+          ethnographical field studies
+        </p>
+        <p class="mt-20 mb-28">
+          This helps us gauge needs and pain points that were felt by Mobile
+          users. These insights included: the need for faster booking process,
+          clearer information and communication and a simpler checkout process.
+          We reflected on AIRBIRDS's AARRR metrics (acquisition, activation,
+          revenue, retention, and referral) and set out to improve in several of
+          these areas.
+        </p>
+      </div>
+    </section>
+    <div class="w-full bg-white px-8 min-h-[60vh] py-12 -mt-5 -mb-5">
+      <!-- bubble orange -->
+      <div
+        class="flex items-center flex-col lg:flex-row relative justify-evenly text-base space-y-6 lg:space-y-0"
+      >
+        <div class="flex flex-col space-y-16 items-center">
+          <div
+            class="rounded-full w-32 h-32 bg-[#FFC727] text-5xl flex justify-center items-center text-white p-4 z-20"
+          >
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="flex flex-col space-y-5 items-center">
+            <h1 class="text-2xl text-gray-700 font-semibold">Acquisition</h1>
+            <p class="text-gray-600 whitespace-nowrap text-xs">
+              How do users find you ?
+            </p>
+          </div>
+        </div>
+        <span
+          class="bg-[#ffc727] w-[77vw] left-32 top-16 h-1 absolute hidden lg:block"
+        ></span>
+
+        <div class="flex flex-col space-y-16 items-center">
+          <div
+            class="rounded-full w-32 h-32 bg-[#FFC727] text-5xl flex justify-center items-center text-white p-4 z-20"
+          >
+            <i class="fa-regular fa-thumbs-up"></i>
+          </div>
+          <div class="flex flex-col space-y-5 items-center">
+            <h1 class="text-2xl text-gray-700 font-semibold">Activation</h1>
+            <p class="text-gray-600 whitespace-nowrap text-xs">
+              Do users have a great first experience ?
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col space-y-16 items-center">
+          <div
+            class="rounded-full w-32 h-32 bg-[#FFC727] text-5xl flex justify-center items-center text-white p-4 z-20"
+          >
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="flex flex-col space-y-5 items-center">
+            <h1 class="text-2xl text-gray-700 font-semibold">Retention</h1>
+            <p class="text-gray-600 whitespace-nowrap text-xs">
+              Do users come back?
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col space-y-16 items-center">
+          <div
+            class="rounded-full w-32 h-32 bg-[#FFC727] text-5xl flex justify-center items-center text-white p-4 z-20"
+          >
+            <i class="fa-solid fa-money-bill"></i>
+          </div>
+          <div class="flex flex-col space-y-5 items-center">
+            <h1 class="text-2xl text-gray-700 font-semibold">Revenue</h1>
+            <p class="text-gray-600 whitespace-nowrap text-xs">
+              How do you make money?
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col space-y-16 items-center">
+          <div
+            class="rounded-full w-32 h-32 bg-[#FFC727] text-5xl flex justify-center items-center text-white p-4 z-20"
+          >
+            <i class="fa-regular fa-message"></i>
+          </div>
+          <div class="flex flex-col space-y-5 items-center">
+            <h1 class="text-2xl text-gray-700 font-semibold">Referral</h1>
+            <p class="text-gray-600 whitespace-nowrap text-xs">
+              Do users tell other people ?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="px-2 md:px-8 lg:px-48 py-14 bg-white w-full">
+      <p class="text-gray-500 mt-36">
+        Our primary objective was to focus around Retention, while Referral and
+        Acquisition were secondary
+      </p>
+      <h2 class="text-xl font-semibold mt-20 text-gray-600">Retention</h2>
+      <p class="text-gray-500 mt-6">
+        Simplify the Airbird's experience and increase DAU/MAU.
+      </p>
+      <h2 class="text-xl font-semibold mt-20 text-gray-600">Referral</h2>
+      <p class="text-gray-500 mt-6">
+        Increase the number of downloads and improve our app store ratings.
+      </p>
+      <h2 class="text-xl font-semibold mt-20 text-gray-600">Acquisition</h2>
+      <p class="text-gray-500 mt-6">
+        Promote Airbird's as the primary method of at-the-door management so
+        that more hosts are aware of it.
+      </p>
+      <h1 class="text-4xl text-blue-700 mt-28 text-center font-medium mb-16">
+        SUMMARY
+      </h1>
+      <p class="text-gray-500">
+        Airbirds makes it easy for user to get the exact time of departure,
+        provides comprehensive and detailed informations on weather reports,
+        smart direction guides with coded GPS to track booked flight from
+        wherever in the world, both on the way to the airports and enroute trips
+        and as well provides room for pick ups and drop offs vehicle bookings
+        and also reservations.
+      </p>
+    </section>
+    <!-- Section for screens -->
+    <section class="px-8 py-14 bg-white w-full -mt-3">
+      <h1 class="text-4xl text-blue-700 mt-28 text-center font-medium mb-16">
+        SCREENS
+      </h1>
+      <!-- images -->
+      <div
+        class="w-[95%] mx-auto mt-40 flex flex-col lg:flex-row justify-between"
+      >
+        <div
+          class="w-full lg:w-[28%] inline-block mr-0 lg:mr-24 mt-8 lg:mt-[40vh] scale"
+        >
+          <img src="images/Group 1150.png" alt="" class="w-full" />
+        </div>
+        <div class="w-full lg:w-[28%] inline-block mr-0 lg:mr-24 scale">
+          <img src="images/Group 1149 (1).png" alt="" class="w-full" />
+        </div>
+        <div class="w-full lg:w-[28%] inline-block mt-8 lg:mt-[40vh] scale">
+          <img src="images/Group 1151.png" alt="" class="w-full" />
+        </div>
+      </div>
+      <!-- Next set of screens -->
+      <div
+        class="w-[95%] mx-auto mt-40 flex flex-col lg:flex-row justify-between"
+      >
+        <div class="w-full lg:w-[28%] inline-block mr-24 scale">
+          <img src="images/Group 1152.png" alt="" class="w-full" />
+        </div>
+        <div class="w-full lg:w-[28%] inline-block mr-24 mt-[20vh] scale">
+          <img src="images/Group 1153.png" alt="" class="w-full" />
+        </div>
+        <div class="w-full lg:w-[28%] inline-block mt-[30vh] scale">
+          <img src="images/Group 1154.png" alt="" class="w-full" />
+        </div>
+      </div>
+      <!-- Set of two -->
+      <div
+        class="w-[95%] mx-auto mt-40 flex flex-col lg:flex-row justify-between"
+      >
+        <div class="w-full lg:w-[28%] inline-block mr-36 scale">
+          <img src="images/Group 1191.png" alt="" class="w-full" />
+        </div>
+        <div class="w-full lg:w-[28%] inline-block scale">
+          <img src="images/Group 1155.png" alt="" class="w-full" />
+        </div>
+      </div>
+      <!-- divider -->
+      <div
+        class="w-[95%] mx-auto mt-40 flex flex-col lg:flex-row justify-between"
+      >
+        <div class="w-full lg:w-[28%] inline-block mr-36 scale">
+          <img src="images/Group 1156.png" alt="" class="w-full" />
+        </div>
+        <div class="w-full lg:w-[28%] inline-block scale">
+          <img src="images/Group 1157.png" alt="" class="w-full" />
+        </div>
+      </div>
+    </section>
+    <footer class="bg-[#FFC727] w-full h-[25vh] lg:h-[20vh] py-8 px-7">
+      <div
+        class="w-full flex flex-col items-center lg:items-center justify-center space-y-6 space-x-0 h-full text-white"
+      >
+        <p class="text-sm">Next Case Study</p>
+        <h1
+          class="text-center inline-block ml-0 lg:ml-[25%] font-semibold text-2xl"
+        >
+          <a href="foodhub.html">
+            Foodhub &nbsp; <i class="fa-solid fa-arrow-right-long"></i>
+          </a>
+        </h1>
+        <!-- <div class="inline-block w-[10%] scale mb-10">
+          <div class="flex w-full space-x-5 text-md lg:text-xl">
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:iamvickd@gmail.com" target="_blank"
+              ><i class="fa-regular fa-envelope"></i
+            ></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-behance"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div> -->
+      </div>
+    </footer>
+  </body>
+</html>

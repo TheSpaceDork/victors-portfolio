@@ -1,0 +1,87 @@
+<!-- <div
+        class="down w-[80vw] min-h-[40vh] md:min-h-[15vh] md:w-[50vw] md:ml-[40vw] lg:max-w-[25vw] z-20 lg:min-h-[50vh] bg-[#5465FF] text-white p-6 md:p-16 ml-0 lg:ml-48 down"
+      >
+        <h1 class="text-3xl font-bold mb-14">AirBirds</h1>
+        <p class="text-xl mb-14">
+          How do I save on flight tickets when i'm not ready to buy them?
+        </p>
+
+        <a class="text-MD mr-5 whitespace-nowrap" href="airbirds.html">
+          VIEW CASE STUDY &nbsp; <i class="fa-solid fa-arrow-right-long"></i
+        ></a>
+
+        <p />
+      </div> -->
+<!-- <div
+        class="w-[80vw] min-h-[40vh] md:min-h-[15vh] md:w-[50vw] lg:max-w-[25vw] lg:min-h-[50vh] z-20 bg-[#FFC31D] text-white p-6 md:p-16 down"
+      >
+        <h1 class="text-3xl font-bold mb-14">Foodhub</h1>
+        <p class="text-xl mb-14">
+          How can i cook my meal online and get it delivered to me?
+        </p>
+
+        <a class="text-MD mr-5 whitespace-nowrap" href="foodhub.html">
+          VIEW CASE STUDY</a
+        >
+        <a href=""><i class="fa-solid fa-arrow-right-long"></i></a>
+
+        <p />
+      </div> -->
+<!-- <div
+        class="w-[80vw] min-h-[40vh] md:w-[50vw] md:min-h-[15vh] lg:max-w-[30vw] lg:min-h-[50vh] bg-[#BFCCE5] text-white p-6 md:p-16 down"
+      >
+        <h1 class="text-3xl md:text-4xl font-bold mb-14 whitespace-nowrap">
+          Side Projects
+        </h1>
+        <p class="text-xl md:text-2xl mb-14">
+          What do i work on <br />
+          outside my 9 to 5 ?
+        </p>
+        <a class="text-lg md:text-xl mr-5 whitespace-nowrap" href=""
+          >VIEW OTHER WORK</a
+        >
+        <a href=""
+          ><i class="fa-solid fa-arrow-right-long whitespace-nowrap"></i
+        ></a>
+      </div> -->
+<!-- <div
+        class="hidden md:block w-[80vw] min-h-[40vh] md:w-[50vw] md:min-h-[15vh] md:ml-5 lg:ml-[20vw] lg:w-[25vw] lg:h-[50vh] bg-[#EB025F] text-white md:py-10 md:px-8 lg:px-16 p-6 down z-20"
+      >
+        <h1 class="text-3xl font-bold mb-14">Flamengo</h1>
+        <p class="text-xl md:text-base lg:text-xl mb-14">
+          How do i create my own customizable outfit design online?
+        </p>
+      </div> -->
+<!-- <div
+          class="w-[80vw] hidden md:block min-h-[40vh] md:w-[50vw] md:min-h-[15vh] lg:max-w-[23vw] lg:min-h-[50vh] bg-[#366E8B] text-white md:p-16 p-6 down z-20"
+        >
+          <h1 class="text-3xl font-bold mb-14">Comforteux</h1>
+          <p class="text-xl mb-14">
+            How do I get high quality furniture and get them installed in my
+            home?
+          </p>
+        </div> -->
+<!-- <div
+          class="hidden md:block w-[80vw] min-h-[40vh] md:w-[50vw] md:min-h-[15vh] lg:max-w-[23vw] lg:min-h-[50vh] bg-[#9C1EBE] text-white md:p-16 p-6 down z-20"
+        >
+          <h1 class="text-3xl font-bold mb-14">Drive</h1>
+          <p class="text-xl mb-14">
+            How do I hire classy cars for every event and pay less?
+          </p>
+        </div> -->
+<!-- <div
+          class="hidden md:block w-[80vw] min-h-[40vh] md:w-[50vw] md:min-h-[15vh] lg:max-w-[23vw] lg:min-h-[50vh] bg-[#FF7700] text-white md:p-16 p-6 down z-20"
+        >
+          <h1 class="text-3xl font-bold mb-14">Paw</h1>
+          <p class="text-xl mb-14">
+            How can I adopt, train and groom my pets effectively?
+          </p>
+        </div> -->
+<!-- <div
+        class="w-[80vw] hidden md:block min-h-[40vh] md:w-[50vw] md:min-h-[15vh] lg:max-w-[23vw] lg:min-h-[50vh] bg-[#18A15D] text-white md:p-16 p-6 down z-20"
+      >
+        <h1 class="text-3xl font-bold mb-14">iBot</h1>
+        <p class="text-xl mb-14">
+          How do i detect damage before time in my car and get it fixed?
+        </p>
+      </div> -->
